@@ -1,0 +1,11 @@
+/******************* General *******************/
+* {
+  box-sizing: border-box;
+}
+body {
+  background: $background-color;
+  background: linear-gradient(to top, $background-gradient-color-1, $background-gradient-color-2);
+  height: 100vh;
+  font-size: 16px;
+  font-family: $primary-font-family;
+}

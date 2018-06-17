@@ -1,0 +1,263 @@
+/******************* General *******************/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #06beb6;
+  background: -webkit-gradient(linear, left bottom, left top, from(#48b1bf), to(#06beb6));
+  background: -webkit-linear-gradient(bottom, #48b1bf, #06beb6);
+  background: -o-linear-gradient(bottom, #48b1bf, #06beb6);
+  background: linear-gradient(to top, #48b1bf, #06beb6);
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+/******************* Wrapper *******************/
+.wrapper {
+  background: #fff;
+  max-width: 600px;
+  width: 90%;
+  margin: 30px auto 0 auto;
+  border-radius: 3px;
+  padding: 20px 25px 5px 25px;
+}
+
+/******************* Header *******************/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header p {
+  color: red;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #0ac8ce;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+/******************* Form *******************/
+form {
+  border: 2px solid #eeeeee;
+  border-radius: 3px;
+}
+
+form input {
+  border: none;
+  padding: 12px 10px;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+form button {
+  background: #0ac8ce;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 8px 8px;
+  font-family: "Lato", sans-serif;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+}
+
+form button:hover {
+  background: #00b9bc;
+}
+
+@media screen and (min-width: 500px) {
+  form {
+    padding-right: 3px;
+  }
+  form input {
+    width: 70%;
+  }
+  form button {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+/******************* Buttons *******************/
+.buttons {
+  margin: 20px auto 5px auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 500px) {
+  .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .buttons button {
+    display: inline-block;
+    width: 130px;
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+  .buttons button:last-child {
+    margin-right: 0;
+  }
+}
+
+.btn {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 2px solid #eeeeee;
+  border-radius: 3px;
+  color: #aaaaaa;
+  background: #fff;
+  padding: 10px 8px;
+  margin-bottom: 5px;
+  display: block;
+  width: 100%;
+}
+
+.active,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background: #0ac8ce;
+  border: 2px solid #0ac8ce;
+  color: #fff;
+}
+
+/******************* List *******************/
+#inviteeList {
+  list-style: none;
+  padding: 0;
+}
+
+#inviteeList li {
+  border: 2px solid #eeeeee;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#inviteeList li input {
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  width: 40%;
+  padding: 8px;
+}
+
+#inviteeList button {
+  background: #0ac8ce;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 8px 8px;
+  font-family: "Lato", sans-serif;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+#inviteeList button:hover {
+  background: #00b9bc;
+}
+
+#inviteeList i {
+  color: #dddddd;
+  font-size: 30px;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+#inviteeList i.fa-pencil-square-o:hover {
+  color: #02db10;
+}
+
+#inviteeList i.fa-times-circle-o:hover {
+  color: #ea0000;
+}
+
+@media screen and (min-width: 500px) {
+  #inviteeList li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #inviteeList button {
+    margin: 0 0 0 auto;
+  }
+  #inviteeList i {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.confirmed {
+  color: #02db10;
+  margin: 5px;
+}
+
+.confirmed::before {
+  content: '\f00c';
+  font-family: "FontAwesome";
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 500px) {
+  .confirmed {
+    margin: 0 0 0 auto;
+  }
+}

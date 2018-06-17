@@ -1,0 +1,72 @@
+/******************* List *******************/
+#inviteeList {
+  list-style: none;
+  padding: 0;
+  li {
+      border: 2px solid $border-color;
+      border-radius: 3px;
+      padding: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      input {
+          border: 1px solid $border-color;
+          border-radius: 3px;
+          width: 40%;
+          padding: 8px;
+      }
+  }
+  button {
+      background: $primary-accent-color;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 900;
+      padding: 8px 8px;
+      font-family: $primary-font-family;
+      transition: background 0.5s;
+      border-radius: 3px;
+      margin: 5px;
+      &:hover {
+          background: $primary-accent-hover-color;
+      }
+  }
+  i {
+      color: $icon-color;
+      font-size: 30px;
+      transition: color 0.5s;
+  }
+  i.fa-pencil-square-o:hover {
+      color: $confirmed-color;
+  }
+  i.fa-times-circle-o:hover {
+      color: $delete-color;
+  }
+  @media screen and (min-width:500px) {
+      li {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      button {
+        margin: 0 0 0 auto;
+      }
+      i {
+        margin-left: 10px;
+        margin-bottom: 0;
+      }
+  }
+}
+.confirmed {
+  color: $confirmed-color;
+  margin: 5px;
+  &::before {
+      content: '\f00c';
+      font-family: $icon-font-family;
+      padding-right: 5px;
+  }
+  @media screen and (min-width:500px) {
+      margin: 0 0 0 auto;
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        
+        <title>RSVP App</title>
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="wrapper">
+          <header>
+            <h1>RSVP</h1>
+            <form id="invitationForm">
+              <input type="text" name="name" placeholder="Enter a name to invite">
+              <button type="submit" name="submit" value="submit">Submit</button>
+            </form>
+            <div class="buttons">
+              <button id="allBtn" class="btn active">All</button>
+              <button id="confirmedBtn" class="btn">Confirmed</button>
+              <button id="unconfirmedBtn" class="btn">Unconfirmed</button>
+            </div>
+          </header>
+          <section>
+            <ul id="inviteeList"></ul>
+          </section>
+        </div>
+        
+        <!-- JavaScript -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
